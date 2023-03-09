@@ -1,0 +1,89 @@
+body {
+    background-color: #050210;
+}
+
+
+#wrapper {
+    position:absolute;
+    margin: 150px;
+    width: 600px;
+    height: 600px;
+    background-color: #050210;
+}
+
+#circle-1 {
+    position: absolute;
+    top: 80px;
+    left: 160px;
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+    filter: blur(15px);
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    animation-name: animacija-1;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 4;
+}
+
+@keyframes animacija-1 {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+#circle-2 {
+    position: absolute;
+    top: 80px;
+    left: 160px;
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    animation-name: animacija-2;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacija-2 {
+    0% { transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+#circle-3 {
+    position: absolute;
+    top: 205px;
+    left: 285px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #130b30;
+    opacity: 0.9;
+    animation-name: animacija-3;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    filter: blur(6px);
+}
+
+@keyframes animacija-3 {
+    0% {transform: scale(0);}
+    100% {transform: scale(6);}
+}
+
+#circle-4 {
+    position: absolute;
+    top: 110px;
+    left: 190px;
+    width: 230px;
+    height: 230px;
+    transform: scale(1);
+    border-radius: 100%;
+    background: #0a0424;
+    opacity: 0.95;
+}
